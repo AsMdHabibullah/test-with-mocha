@@ -1,0 +1,10 @@
+{
+  "exec": "npm run dev",
+  "watch": [
+    "src/*"
+  ],
+  "ignore": [
+    "dist/*",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "test-with-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "babel src -d dist",
+    "build": "npm run clean && npm run compile",
+    "test": "mocha dist/spac/index.js",
+    "dev": "npm run build && npm run test",
+    "start": "nodemon dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsMdHabibullah/test-with-mocha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsMdHabibullah/test-with-mocha/issues"
+  },
+  "homepage": "https://github.com/AsMdHabibullah/test-with-mocha#readme",
+  "devDependencies": {
+    "mocha": "^7.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "chai": "^4.2.0",
+    "rimraf": "^3.0.2"
+  }
+}
